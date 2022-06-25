@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Combinator selectors</title>
+    <style>
+        /* Descendant Selector */
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child Selector (>) */
+        p>span {
+            background-color: red;
+        }
+
+        /* Adjacent Sibling Selector (+) */
+        h3+p {
+            padding: 50px;
+            border: 2px solid black
+        }
+
+        /* General Sibling Selector (~) */
+        h1~p {
+            color: gray
+        }
+    </style>
+</head>
+
+<body>
+    <!-- matches all elements that are descendants of a specified element. -->
+    <div>
+        <p>Descendant Selector</p>
+        <i>
+            <p>Descendant Selector</p>
+        </i>
+    </div>
+    <!-- selects all elements that are the children of a specified element. -->
+    <p>
+        <span>Child Selector</span>
+        <i>
+            <span>Child Selector</span>
+        </i>
+    </p>
+    <!-- select an element that is directly after another specific element -->
+    <h3>Adjacent Sibling Selector</h3>
+    <p>Border and padding</p>
+    <!-- selects all elements that are next siblings of a specified element. -->
+    <h1>List</h1>
+    <p>1. CSS Assignment</p>
+    <p>2. CSS Study</p>
+</body>
+
+</html>
