@@ -46,15 +46,23 @@
         p:first-child {
             color: blue;
         }
+
+        p:last-child {
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
     <div>Hover over here
-        <p id="tooltip">Can you see me?</p>
+        <span id="tooltip">Can you see me?</span>
     </div>
-
-    <p><b><a>This is a link</a></b></p>
+    <div>
+        <p>first child</p>
+    </div>
+    <div>
+        <p><b><a href=".">This is a link</a></b></p>
+    </div>
     <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
     <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
 </body>
